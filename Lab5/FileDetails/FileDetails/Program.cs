@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,6 @@ namespace FileDetails
             }
             Console.ReadKey(); */
     
-            //нужно было использовать метод IDisposable и структуру using, но я не разобралась как
             string fileName = args[0];
             FileStream stream = new FileStream(fileName, FileMode.Open);
             StreamReader reader = new StreamReader(stream);
